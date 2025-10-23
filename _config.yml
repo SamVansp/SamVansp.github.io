@@ -24,6 +24,12 @@ description: >-
 theme: minima
 url: "https://samvansp.github.io"
 baseurl: "" # leave empty for a personal site
+header_pages:
+  - index.md
+  - about.md
+  - projects.md
+  - contact.md
+
 
 
 # Build settings
