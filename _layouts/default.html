@@ -8,6 +8,10 @@ layout: null
   </head>
   <body>
     {% include header.html %}
+    {% if page.banner_image %}
+    <div class="banner" style="background-image: url('{{ page.banner_image | relative_url }}')"></div>
+    {% endif %}
+
     <main class="page-content">
       <div class="container">
         {{ content }}

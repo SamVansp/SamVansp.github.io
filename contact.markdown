@@ -1,6 +1,13 @@
 ---
-layout: page
+layout: default
 title: Contact
-permalink: /contact/
+banner_image: /assets/images/contact-banner.jpg
 ---
-Coming soon!
+
+# Get in Touch
+
+<div class="contact-links">
+  <a href="mailto:sam.vanspriell@gmail.com">Email</a>
+  <a href="https://www.linkedin.com/in/samvanspriell/">LinkedIn</a>
+  <a href="https://github.com/samvansp">GitHub</a>
+</div>
