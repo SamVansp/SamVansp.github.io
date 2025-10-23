@@ -11,15 +11,15 @@ permalink: /projects/
     <div class="slide active">
       <img src="/assets/images/project1.jpg" alt="Mapping River Systems">
       <div class="caption">
-        <h3>Mapping River Systems</h3>
-        <p>Using satellite imagery and Google Earth Engine to classify water features across Minnesota.</p>
+        <h3>Conservation Cartography</h3>
+        <p>Using GIS to identify conservation targets in the Twin Cities Metro Area</p>
       </div>
     </div>
     <div class="slide">
       <img src="/assets/images/project2.jpg" alt="Air Quality Analysis">
       <div class="caption">
-        <h3>Air Quality Analysis</h3>
-        <p>Monitoring ambient air data to identify pollutant trends and support climate policy efforts.</p>
+        <h3>Maps for Long term Planning</h3>
+        <p>Creating Maps to inform long term planning efforts at Buffalo River State Park</p>
       </div>
     </div>
     <div class="slide">

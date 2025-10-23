@@ -1,27 +1,53 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const slides = document.querySelectorAll('.slide');
-  const prev = document.querySelector('.prev');
-  const next = document.querySelector('.next');
-  let current = 0;
+document.addEventListener("DOMContentLoaded", function() {
+  const slides = document.querySelectorAll(".slide");
+  const prev = document.querySelector(".prev");
+  const next = document.querySelector(".next");
+  const carousel = document.querySelector(".carousel");
+  let index = 0;
+  let autoScroll;
 
-  function showSlide(index) {
-    slides.forEach(slide => slide.classList.remove('active'));
-    slides[index].classList.add('active');
+  function showSlide(i) {
+    slides.forEach((slide, idx) => {
+      slide.classList.toggle("active", idx === i);
+    });
   }
 
-  prev.addEventListener('click', () => {
-    current = (current === 0) ? slides.length - 1 : current - 1;
-    showSlide(current);
+  function nextSlide() {
+    index = (index + 1) % slides.length;
+    showSlide(index);
+  }
+
+  function prevSlide() {
+    index = (index - 1 + slides.length) % slides.length;
+    showSlide(index);
+  }
+
+  function startAutoScroll() {
+    autoScroll = setInterval(nextSlide, 5000); // ← 5 seconds between slides
+  }
+
+  function stopAutoScroll() {
+    clearInterval(autoScroll);
+  }
+
+  // Manual navigation
+  next.addEventListener("click", () => {
+    stopAutoScroll();
+    nextSlide();
+    startAutoScroll();
   });
 
-  next.addEventListener('click', () => {
-    current = (current === slides.length - 1) ? 0 : current + 1;
-    showSlide(current);
+  prev.addEventListener("click", () => {
+    stopAutoScroll();
+    prevSlide();
+    startAutoScroll();
   });
 
-  // Optional: auto-advance every 6 seconds
-  setInterval(() => {
-    current = (current + 1) % slides.length;
-    showSlide(current);
-  }, 6000);
+  // Pause on hover
+  carousel.addEventListener("mouseenter", stopAutoScroll);
+  carousel.addEventListener("mouseleave", startAutoScroll);
+
+  // Initialize
+  showSlide(index);
+  startAutoScroll();
 });
