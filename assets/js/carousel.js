@@ -1,10 +1,8 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const slides = document.querySelectorAll(".slide");
-  const prev = document.querySelector(".prev");
-  const next = document.querySelector(".next");
-  const carousel = document.querySelector(".carousel");
+  const prevBtn = document.querySelector(".prev");
+  const nextBtn = document.querySelector(".next");
   let index = 0;
-  let autoScroll;
 
   function showSlide(i) {
     slides.forEach((slide, idx) => {
@@ -22,32 +20,9 @@ document.addEventListener("DOMContentLoaded", function() {
     showSlide(index);
   }
 
-  function startAutoScroll() {
-    autoScroll = setInterval(nextSlide, 5000); // ← 5 seconds between slides
-  }
-
-  function stopAutoScroll() {
-    clearInterval(autoScroll);
-  }
-
-  // Manual navigation
-  next.addEventListener("click", () => {
-    stopAutoScroll();
-    nextSlide();
-    startAutoScroll();
-  });
-
-  prev.addEventListener("click", () => {
-    stopAutoScroll();
-    prevSlide();
-    startAutoScroll();
-  });
-
-  // Pause on hover
-  carousel.addEventListener("mouseenter", stopAutoScroll);
-  carousel.addEventListener("mouseleave", startAutoScroll);
+  prevBtn.addEventListener("click", prevSlide);
+  nextBtn.addEventListener("click", nextSlide);
 
   // Initialize
   showSlide(index);
-  startAutoScroll();
 });
