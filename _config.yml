@@ -1,12 +1,13 @@
 # Welcome to Jekyll!
 
 
-title: My Jekyll Site
+title: Sam Vanspriell
 description: >- 
-  A website built with Jekyll and hosted on GitHub Pages.
+  Enviormental Studies gradute working for the Department of Natural Resources on planning for Parks and Trails, interested in GIS, data science and conservation
 theme: minima
 url: "https://samvansp.github.io"
 baseurl: "" # leave empty for a personal site
+author: Sam Vanspriell
 header_pages:
   - index.md
   - about.md
@@ -19,6 +20,7 @@ header_pages:
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.

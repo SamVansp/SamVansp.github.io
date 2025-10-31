@@ -7,18 +7,22 @@ banner_image: /assets/images/banner.jpg
 
 ## Welcome to My Site
 
-Hi! I’m Sam Vanspriell. This site is where I share my projects, background, and environmental work.
+Hi! My name is Sam Vanspriell and this is my website. Here you will find details about my recent projects, examples of my work and any relevant life and professional updates. 
 
 ## Recent Updates
 
 <div class="updates">
-  <div class="update">
-    <h3>🌳 New River Mapping Project</h3>
-    <p>Just finished classifying Minnesota river segments in Google Earth Engine! Check back soon for interactive maps.</p>
-  </div>
-
-  <div class="update">
-    <h3>📊 Air Monitoring Dashboard</h3>
-    <p>Building a prototype dashboard for ambient air quality data visualization using ArcGIS and R.</p>
-  </div>
+  {% for post in site.posts limit:3 %}
+    <div class="update">
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <small>{{ post.date | date: "%B %d, %Y" }}</small>
+      <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
+      <a href="{{ post.url }}">Read more →</a>
+    </div>
+  {% endfor %}
 </div>
+
+<div class="view-all">
+  <a href="/Blog/" class="button">View All Posts</a>
+</div>
+
