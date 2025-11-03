@@ -2,7 +2,7 @@
 layout: default
 title: Contact
 permalink: /contact/
-banner_image: /assets/images/contact-banner.jpg
+banner_image: /assets/images/contact-banner3.jpg
 ---
 
 # Get in Touch
@@ -16,6 +16,6 @@ I’m always happy to connect! Whether you want to discuss environmental project
     <a href="https://github.com/samvansp" class="contact-button">🐙 GitHub</a>
   </div>
   <div class="contact-image">
-    <img src="/assets/images/contact-placeholder.jpg" alt="Sam Vanspriell">
+    <img src="/assets/images/say-hello.jpg" alt="Reach out to Sam Vanspriell">
   </div>
 </div>
