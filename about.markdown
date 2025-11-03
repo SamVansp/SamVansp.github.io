@@ -6,13 +6,13 @@ permalink: /about/
 
 # About Me
 
-<div class="about-section">
-  <img src="/assets/images/fieldwork2.jpg" alt="Fieldwork photo">
-  <div>
-    <h2>Academic Background</h2>
+<div class="about-section hero">
+  <img src="/assets/images/fieldwork2.jpg" alt="Fieldwork photo" class="hero-img">
+  <div class="hero-text">
     <p>I graduated from Macalester College in 2024, where I earned my B.A. in Environmental Studies and Data Science. While in school, I thoroughly enjoyed blending my passion for data visualization and analysis with environmental conservation and stewardship. This was exemplified by my capstone project, where I worked with <a href="https://fmr.org/updates/conservation/spring-intern-creates-strategic-land-protection-database" target="_blank" rel="noopener noreferrer">Friends of the Mississippi River</a> to identify and map high-value conservation areas across the Twin Cities region.</p>
   </div>
 </div>
+
 
 <div class="about-section reverse">
   <img src="/assets/images/mapping.jpg" alt="Poster of GIS Work">
