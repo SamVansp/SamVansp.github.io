@@ -7,8 +7,7 @@ banner_image: /assets/images/banner.jpg
 
 ## Welcome to My Site
 
-Hi! My name is Sam Vanspriell and this is my website. Here you will find details about my recent projects, examples of my work and any relevant life and professional updates. 
-
+Hi there! My name is Sam Vanspriell and this is my website, feel free to look around and explore some of my projects, my recent updates and look to my contact page if you want to reach out and get in touch! 
 ## Recent Updates
 
 <div class="updates">
