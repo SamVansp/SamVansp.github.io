@@ -3,11 +3,12 @@
 
 title: Sam Vanspriell
 description: >- 
-  Enviormental Studies gradute working for the Department of Natural Resources on planning for Parks and Trails, interested in GIS, data science and conservation
+  Environmental Studies graduate working for the Department of Natural Resources on planning for Parks and Trails, interested in GIS, data science and conservation
 theme: minima
 url: "https://samvansp.github.io"
 baseurl: "" # leave empty for a personal site
 author: Sam Vanspriell
+email: sam.vanspriell@gmail.com
 header_pages:
   - index.md
   - about.md
@@ -15,14 +16,25 @@ header_pages:
   - contact.md
 
 
+tagline: "GIS, data science, and conservation"
+social_links:
+  github: samvansp
+  linkedin: sam-vanspriell-992405242
 
-# Build settings
-theme: minima
+header_pages:
+  - index.md
+  - about.md
+  - projects.md
+  - contact.md
+#  Plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
 
+# Build settings
+markdown: kramdown
+timezone: America/Chicago
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

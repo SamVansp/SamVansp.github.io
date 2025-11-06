@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://samvansp.github.io/sitemap.xml
